@@ -29,7 +29,7 @@ cacheSolve <- function(x, ...) {
     } 
     # Otherwise compute the inverse
     data <- x$get()
-    inv <- solve(data)
+    inv <- solve(data, ...)
     x$setinv(inv)
     # Return the inverse
     inv
